@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery.validate.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1;
+
+            var yyyy = today.getFullYear();
+            if (dd < 10) { dd = '0' + dd } if (mm < 10) { mm = '0' + mm } today = yyyy + '-' + mm + '-' + dd;
+
+            $('#dateHoursByProjectOnDate').attr('value', today);
+            $('#dateHoursByWorkerOnDate').attr('value', today);
+            $('#dateMaijorWorkedHoursOnDate').attr('value', today);
+            
+
+            var setReportPath = function (src) {
+
+                var $iframe = $('#iFrameReportBody');
+                if ($iframe.length) {
+                    $iframe.attr('src', src);
+                }
+            }
+
+
+            $("#btnHoursByProject").click(function () {
+                setReportPath('/Reports/WebFormReportHoursByProject.aspx');
+            });
+
+            $("#btnHoursByProjectOnDate").click(function () {
+                setReportPath('/Reports/WebFormReportHoursByProjectOnDate.aspx?Date=' + $('#dateHoursByProjectOnDate').val());
+            });
+            $("#btnMaijorWorkedHours").click(function () {
+                setReportPath('/Reports/WebFormReportMajorWorkedHours.aspx');                
+            });            
+
+            $("#btnHoursByWorkerOnDate").click(function () {
+                setReportPath('/Reports/WebFormReportMajorWorkedHoursOnDate.aspx?Date=' + $('#dateHoursByWorkerOnDate').val());
+            });
+
+            $("#btnMaijorWorkedHoursOnDate").click(function () {
+                setReportPath('/Reports/WebFormReportMajorWorkedHoursOnDate.aspx?Date=' + $('#dateMaijorWorkedHoursOnDate').val() + '&Hours=' + $('#numberMaijorWorkedHoursOnDate').val());
+            });
+
+        });
+    </script>
+
+</head>
+<body style="overflow: hidden">
+    <table  >
+        <tr>
+            <td>
+                <h4 style="text-align:right"><span class="label label-pill label-info">Horas gastas por projeto :</span></h4>
+            </td>
+            <td>
+                <button class="btn btn-info" data-dismiss="modal" aria-hidden="true" id="btnHoursByProject">Processar</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align:right">
+                <h4><span class="label label-pill label-info">Horas gastas por projeto em uma determinada Data :</span></h4>
+            </td>
+            <td>
+                <button class="btn btn-info" data-dismiss="modal" aria-hidden="true" id="btnHoursByProjectOnDate">Processar</button>
+            </td>
+            <td><input type="date" id="dateHoursByProjectOnDate" /></td>
+        </tr>
+        <tr>
+            <td style="text-align:right">
+                <h4><span class="label label-pill label-info">Qual colaborador desprendeu mais esforço em horas de trabalho :</span></h4>
+            </td>
+            <td><button class="btn btn-info" data-dismiss="modal" aria-hidden="true" id="btnMaijorWorkedHours">Processar</button></td>
+        </tr>
+        <tr>
+            <td style="text-align:right">
+                <h4><span class="label label-pill label-info">Quantidade de horas trabalhadas por colaborador em uma determinada data :</span></h4>
+            </td>
+            <td><button class="btn btn-info" data-dismiss="modal" aria-hidden="true" id="btnHoursByWorkerOnDate">Processar</button></td>
+            <td><input type="date" id="dateHoursByWorkerOnDate" /></td>
+        </tr>
+        <tr  >
+            <td  >
+                <h4><span class="label label-pill label-info">Colaboradores que excederam mais de 10h trabalhadas em determinada data :</span></h4>
+            </td>
+            <td><button class="btn btn-info" data-dismiss="modal" aria-hidden="true" id="btnMaijorWorkedHoursOnDate">Processar</button></td>
+            <td><input type="date" id="dateMaijorWorkedHoursOnDate" /></td>
+            <td><h4><span class="label label-pill label-info">  Com horas igual ou acima de :</span></h4></td>
+            <td><input type="number" id="numberMaijorWorkedHoursOnDate" value="10" width="5" /></td>
+        </tr >
+    </table>
+
+    <iframe id="iFrameReportBody" style="width: 100%; position: absolute; height: 100%; border: none" />
+</body>
+</html>

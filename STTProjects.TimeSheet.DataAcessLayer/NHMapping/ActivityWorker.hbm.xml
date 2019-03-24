@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping  xmlns="urn:nhibernate-mapping-2.2">
+  <class name="STTProjects.TimeSheet.Model.ActivityWorker, STTProjects.TimeSheet.Model" table="ActivitiesWorkers" lazy = "true">
+
+    <id name="ID" type="int" unsaved-value="null" >
+      <column name="id" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <property column="Hours" type="double" name="Hours"   />
+    
+    <many-to-one name="Activity" column="ActivityID" class="STTProjects.TimeSheet.Model.Activity, STTProjects.TimeSheet.Model" />
+    <many-to-one name="Worker" column="WorkerID" class="STTProjects.TimeSheet.Model.Worker, STTProjects.TimeSheet.Model" />
+
+    <property column="Comment" type="string" name="Comment"   />
+    
+  </class>
+</hibernate-mapping>

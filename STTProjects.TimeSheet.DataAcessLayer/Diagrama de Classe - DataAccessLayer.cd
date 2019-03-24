@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="STTProjects.TimeSheet.DataAccessLayer.ActivityDataAccessLayer">
+    <Position X="0.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActivityDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.DataAccessLayer.ActivityWorkerDataAccessLayer">
+    <Position X="5.25" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActivityWorkerDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.DataAccessLayer.BaseDataAccessLayer&lt;T&gt;">
+    <Position X="3.5" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.DataAccessLayer.DataAccess&lt;T&gt;">
+    <Position X="3.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAACAAAAAAAAAAAAAAAAEAAAIAEgAAgAAAAAA=</HashCode>
+      <FileName>DataAccess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="STTProjects.TimeSheet.DataAccessLayer.NHibernateHelper">
+    <Position X="7.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAABAAAAMAAAAAAAAAAAAQAAAAEAAAAAA=</HashCode>
+      <FileName>NHibernateHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.DataAccessLayer.ProjectDataAccessLayer">
+    <Position X="8" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjectDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.DataAccessLayer.WorkerDataAccessLayer">
+    <Position X="3" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorkerDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

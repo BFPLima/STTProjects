@@ -1,0 +1,11 @@
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\STTProjects.TimeSheet.DataAcessLayer.dll
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\STTProjects.TimeSheet.DataAcessLayer.pdb
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\Iesi.Collections.dll
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\NHibernate.dll
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\STTProjects.TimeSheet.Model.dll
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\STTProjects.TimeSheet.Model.pdb
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\Iesi.Collections.xml
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\bin\Debug\NHibernate.xml
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\obj\Debug\STTProjects.TimeSheet.DataAcessLayer.csprojResolveAssemblyReference.cache
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\obj\Debug\STTProjects.TimeSheet.DataAcessLayer.dll
+F:\STTProjects.TimeSheet\STTProjects.TimeSheet.DataAcessLayer\obj\Debug\STTProjects.TimeSheet.DataAcessLayer.pdb

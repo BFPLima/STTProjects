@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="STTProjects.TimeSheet.Model.Activity">
+    <Position X="3.5" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAgAAAAAgAAKAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Activity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ActivityWorkers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.Model.ActivityWorker">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAEAAAQAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>ActivityWorker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Worker" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.Model.BaseObject" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.Model.Project">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAgAAAAgAAAAAQAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Activities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.Model.Worker">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.Model.Report.ReportObjectHoursByProject">
+    <Position X="12" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report\ReportObjectHoursByProject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.Model.Report.ReportObjectHoursByWorker">
+    <Position X="15" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report\ReportObjectHoursByWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STTProjects.TimeSheet.Model.Report.ReportObjectHoursProjectByDate">
+    <Position X="12" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Report\ReportObjectHoursProjectByDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="STTProjects.TimeSheet.Model.IResultOperation">
+    <Position X="7.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAAAA=</HashCode>
+      <FileName>IResultOperation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="STTProjects.TimeSheet.Model.ResultOperationStatus">
+    <Position X="9" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>IResultOperation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
